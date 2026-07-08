@@ -1,0 +1,14 @@
+{
+  "extends": "../../packages/config/tsconfig.react-native.json",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": ["./*"],
+      "@nutricoach/types": ["../../packages/types/src"],
+      "@nutricoach/shared": ["../../packages/shared/src"],
+      "@nutricoach/utils": ["../../packages/utils/src"],
+      "@nutricoach/ai": ["../../packages/ai/src"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
+}

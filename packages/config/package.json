@@ -1,0 +1,18 @@
+{
+  "name": "@nutricoach/config",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./tsconfig.base": "./tsconfig.base.json",
+    "./tsconfig.nextjs": "./tsconfig.nextjs.json",
+    "./tsconfig.react-native": "./tsconfig.react-native.json"
+  },
+  "scripts": {
+    "build": "echo \"config package has no build step\"",
+    "lint": "echo \"config package has no lint step\"",
+    "typecheck": "echo \"config package has no typecheck step\"",
+    "test": "echo \"config package has no test step\"",
+    "clean": "echo \"config package has no clean step\""
+  }
+}

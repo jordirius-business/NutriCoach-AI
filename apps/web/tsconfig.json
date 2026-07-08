@@ -1,0 +1,29 @@
+{
+  "extends": "../../packages/config/tsconfig.nextjs.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"],
+      "@nutricoach/types": ["../../packages/types/src"],
+      "@nutricoach/shared": ["../../packages/shared/src"],
+      "@nutricoach/utils": ["../../packages/utils/src"],
+      "@nutricoach/ui": ["../../packages/ui/src"],
+      "@nutricoach/ai": ["../../packages/ai/src"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["node_modules"]
+}
