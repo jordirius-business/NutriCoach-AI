@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {/* config options here */};
+const nextConfig: NextConfig = {
+  transpilePackages: ["@nutricoach/shared", "@nutricoach/types", "@nutricoach/ui"],
+};
 
 export default nextConfig;
