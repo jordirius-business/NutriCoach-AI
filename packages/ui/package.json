@@ -1,0 +1,24 @@
+{
+  "name": "@nutricoach/ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.tsx",
+  "types": "./src/index.tsx",
+  "scripts": {
+    "build": "tsc --project tsconfig.json --emitDeclarationOnly",
+    "lint": "echo \"ui package lint handled by consumers\"",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "test": "vitest run",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "react": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "rimraf": "^6.0.1",
+    "typescript": "^6.0.3",
+    "vitest": "^3.2.4"
+  }
+}

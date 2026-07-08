@@ -1,0 +1,25 @@
+{
+  "name": "@nutricoach/database",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json --emitDeclarationOnly",
+    "lint": "echo \"database package lint handled by consumers\"",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "test": "vitest run",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
+    "drizzle-orm": "^0.44.6"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.4",
+    "rimraf": "^6.0.1",
+    "typescript": "^6.0.3",
+    "vitest": "^3.2.4"
+  }
+}
